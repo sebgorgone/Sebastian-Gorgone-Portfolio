@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
      if (scrollDisabled) e.preventDefault();
    }
 
+   function preventScroll(e) {
+     if (scrollDisabled) e.preventDefault();
+   }
+
    function disableScroll() {
      if (!scrollDisabled) {
        document.body.style.overflow = 'hidden';
@@ -25,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
        document.body.style.width = '100%';
        scrollDisabled = true;
        document.addEventListener('touchmove', preventTouchMove, { passive: false });
+       window.addEventListener('touchmove', preventScroll, { passive: false });
+       window.addEventListener('gesturestart', preventScroll, { passive: false });
+       window.addEventListener('wheel', preventScroll, { passive: false });
      }
    }
 
@@ -36,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
        document.body.style.width = '';
        scrollDisabled = false;
        document.removeEventListener('touchmove', preventTouchMove, { passive: false });
+       window.removeEventListener('touchmove', preventScroll, { passive: false });
+       window.removeEventListener('gesturestart', preventScroll, { passive: false });
+       window.removeEventListener('wheel', preventScroll, { passive: false });
      }
    }
 
