@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script src="pageinteraction.js"></script>
+  <link rel="stylesheet" href="style/DashboardElements.css" />
+  <link rel="stylesheet" href="style/ProgramStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/eb84e214f4.js" crossorigin="anonymous"></script>
+  <title>BOZOBLAST</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="setupUtility.js"></script>
+  <script src ="scoring.js"></script>
+  <script src="blockclass.js"></script>
+  <script src="interaction.js"></script>
+  <script src="blockLibrary.js"></script>
+  <script src="BBV2.js"></script>
+  <style>
+    canvas{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -2;
+
+    }
+  </style>
+</head>
+<body style="background-color: #3b484d; border: 2px none #bd3d3f; margin: 0;">
+  <!-- banner  -->
+
+  <div class="contact_bar" onmouseleave="hideDropdown()" >
+    <div class="dropdown_content" id="dropdown">
+
+      <div class="div1">
+        <a href="#" class="fa fa-instagram"><p class="label"></p></a>
+      </div>
+
+      <div class="div2">
+        <a href="#" class="fa fa-linkedin"><p class="label"></p></a>
+      </div>
+
+      <div class="div3">
+        <a href="https://github.com/sebgorgone"  target="_blank" class="fa fa-github"><p class="label"></p></a>
+      </div>
+<!-- optional stack overflow reference -->
+      <!-- <div class="div4">
+        <a href="#" class="fa fa-stack-overflow"><p>stack overflow</p></a>
+      </div> -->
+
+      <div class="div5">
+        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+          <p class="label"></p>
+        </a>
+      </div>
+
+    </div>
+    <button class="icon" onclick="toggleDropdown()">Contact Me</button>
+    <p id="dot">.</p>
+</div>
+  <!-- header page top spacer -->
+<div class="headerFiller"></div>
+
+</body>
+</html>
