@@ -23,3 +23,18 @@ function CubeProjJump(event) {
        }
    });
 }
+
+function BlockProjJump(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+ 
+    // Wait for the DOM to load (if not fully loaded)
+    window.requestAnimationFrame(() => {
+        const target = document.getElementById("BBLZ");
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            console.log("Scrolled to Project 1");
+        } else {
+            console.error("Element not found: #Project1");
+        }
+    });
+ }

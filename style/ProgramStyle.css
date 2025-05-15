@@ -19,11 +19,23 @@
    border-top-right-radius: 1vw;
 
 }
+
+#projectIndex h2 {
+   color: #bd3d3f;
+   background: #104b51;
+   font-family: BankGOthicBold;
+   text-align: center; 
+   margin: 0;  
+   font-size: 3.5vw;
+   border-radius: 2.5vw;
+   border-top-right-radius: 1vw;
+
+}
 .indexLink {
    color: #bd3d3f;
    background: #104b51;
    display: block;
-   font-family: BankGothicRegular;
+   font-family: BankGothicBold;
    font-size: 2.7vw;
    border: 4px solid #bd3d3f;
    padding: 1vw;
@@ -32,7 +44,16 @@
 
 }
 
+.indexLink:hover {
+   padding: 1.5vw;
+   border: 6px solid #bd3d3f;
+   border-radius: 1.5vw;
+   margin-bottom: 1vh;
+}
+
 .sublink {
+   font-family: BankGothicRegular;
+   font-size: 2.2vw;
    color: #bd3d3f;
    background: #104b51;
    margin:0;
@@ -41,7 +62,63 @@
 
 }
 
-.project1 {}
+
+
+#mbl:hover{
+   color: #924144;
+}
+
+.turningcube {
+   margin: auto;
+   margin-top: 5vh;
+   border-radius: 2.5vw;
+   width: 77vw;
+   background: #104b51;
+   border: 4px solid #bd3d3f;
+   margin-bottom: 10vh;
+   margin-top: 10vh;
+
+}
+
+.turningcube h1{
+   color: #bd3d3f;
+   font-family: BankGOthicBold;
+   text-align: center; 
+   font-size: 3.5vw;
+
+}
+
+.turningcube p {
+   color: #bd3d3f;
+   text-indent: 2vw;
+   font-family: BankGothicRegular;
+   font-size: 2.7vw;
+   padding: 2vw;
+   margin-left: 2vw;
+   margin-right: 2vw;
+}
+
+.turningcube a {
+   font-family: BankGothicRegular;
+   font-size: 3.5vw;
+   display: block;
+   margin: 2vw;
+   text-align: center;
+}
+
+.turningcube iframe{
+   aspect-ratio: 4 / 2;
+   display: block;
+   border: 3px #bd3d3f solid;
+   border-radius: 3.5vw;
+}
+
+.turningcube i {
+   color: #bd3d3f;
+   font-size: 4vw;
+   margin-top: 3vw;
+   margin-left: 10vw;
+}
 
 .programming-subtext-container {
    margin: auto;
@@ -53,6 +130,14 @@
    border-bottom-left-radius: 1vw;
    border-top-right-radius: 1vw;
 
+}
+
+.programming-subtext-container h1 {
+   color: #bd3d3f;
+   text-align: center;
+   font-style: bold;
+   font-family: BankGothicRegular;
+   font-size: 5vw;
 }
 
 .programming-subtext-container h3 {
@@ -68,6 +153,7 @@
 .programming-subtext-container a {
    color: #bd3d3f;
    font-size: 10vw;
+   text-decoration: none;
    position: absolute;
    margin: 0;
    padding: 0;
@@ -78,6 +164,39 @@
 .programming-subtext-container a:hover {
    color: #924144;
 
+}
+
+.imagesforcubes {
+   width: 70vw;
+   margin: auto;
+}
+
+#turningcubespic {
+   aspect-ratio: 1.54 / 1;
+   width: 60vw;
+   margin: 5vw;
+   border: 4px solid #bd3d3f;
+   border-radius: 2.5vw;
+}
+
+#hxdg {
+   /* margin-top: 5vh; */
+   margin-left: calc((100% - 77vw) / 2);
+   aspect-ratio: 1 / 1;
+   width: 44vw;
+   border: 4px solid #bd3d3f;
+   border-radius: 2.5vw;
+}
+
+#dbvw {
+   margin-top: 5vh;
+   display: block;
+   margin-left: calc(((100% - 77vw) / 2) + 24vw);
+   aspect-ratio: 1.54 / 1;
+   width: 52vw;
+   border: 4px solid #bd3d3f;
+   border-radius: 2.5vw;
+   margin-bottom: 5vh;
 }
 
    

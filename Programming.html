@@ -88,41 +88,117 @@
       <h1>Programming</h1>
       </div>
 
-    <div class="programming-subtext-container">
-      <h3>
-        Im looking to go into User Expirience and User Interface Design. I have limited expirience with Python, html, and css. I have been working with javascript almost exclusively since November 2024. Im building this page to build on my own knowledge of html and css, all with the intent of learning front-end javascript frameworks. All of the code for these projects are in my github Repo for this portfolio.      
-        <a href="https://github.com/sebgorgone" target="_none" id="githublink" class="fa fa-github"><p class="label"></p></a>
-      </h3>
-      <br>
-      <br>
-      <br>
-    </div>
-
       <div id="projectIndex">
+        <h2>Programming Projects</h2>
         <a class="indexLink" href="#" onclick="CubeProjJump(event)">Turning Cubes</a>
         <p class="sublink">javascript</p>
         <p class="sublink">p5.js library</p>
-        <a class="indexLink" href="BZBLASTMOBILEBROWSER/" target="_blank">'BozoBlast'</a>
+        <a class="indexLink" href="#" onclick="BlockProjJump(event)">'BozoBlast'</a>
         <p class="sublink">javascript</p>
         <p class="sublink">p5.js library</p>
-        <p class="sublink">(mobile browsers)</p>
+        <p id="mbl" class="sublink" onclick="window.open('BZBLASTMOBILEBROWSER/index.html', '_self')">(mobile browsers)</p>
+        <br>
+        <br> 
+      </div>
+
+      <div class="programming-subtext-container">
+        <h1>
+          Software Design
+        </h1>
+        <h3>
+          Im looking to go into User Expirience and User Interface Design. I have limited expirience with Python, html, and css. I have been working with javascript almost exclusively since November 2024. Im building this page to build on my own knowledge of html and css, all with the intent of learning front-end javascript frameworks. All of the code for these projects are in my github Repo for this portfolio.      
+          <a href="https://github.com/sebgorgone" target="_none" id="githublink" class="fa fa-github"><p class="label"></p></a>
+        </h3>
+        <br>
+        <br>
         <br>
       </div>
 
-      <div id="project_">
-        <div class="title-container">
-          <h1>Programming</h1>
-          </div>    <div class="title-container">
-            <h1>Programming</h1>
-            </div>    <div class="title-container">
-              <h1>Programming</h1>
-              </div>    <div class="title-container">
-                <h1>Programming</h1>
-                </div>    <div class="title-container">
-                  <h1>Programming</h1>
-                  </div>
+      <div id="project_" class="turningcube">
+
+        <h1>"Turning Cubes"</h1>
+
+        <p id="cubeIntro">Turning cubes was the Final Project for my Intro to Visual Programming for the school of Digitial Media and Design at the University of Connecticut.</p>
+        <p>
+          In this class we had been lectured on the fundementals of javascript using the p5.js library. I learned a handful of javascript concepts in this concepts, but when it came time for the final I was on my own. This project had been inspired by a 3Blue1Brown Youtube video, where he shows a grid of rhombi arranged to look like 3d blocks. He does this to solve a 2d puzzle in 3d, however I was intrigued by the geometry described to construct the rhombus grid. I chose to attempt to recreate that grid with a generative and random pattern for my final project.
+        </p>
+
+        <a href="https://youtu.be/piJkuavhV50?si=6xaPaURDWYbQV769&t=29" target="_blank">3Blue1Brown Video</a>
 
       </div>
+
+      <div class="imagesforcubes">
+        <img id="turningcubespic" src="materials/cubeBnW.png" />
+      </div>
+
+      <div class="turningcube">
+
+        <h1>Initial Iteration</h1>
+
+        <p>
+          My first go through I painstakingsly put together an itertive grid of rhombus objects. Each rhombus was logically bound to a given 'center point' drawn at each one of the grid points. The result was a clean meshing grid of rhombi that looked like cubes, however this approach got me in trouble when it came to generatively growing the pattern of the cube structure.</p>
+          <p>
+             This gave the effect of cubes dissappering and reappearing, but the patterns would no go passed a zigzag stairstep pattern. I wanted it to be able to morph into bigger structures for a lack of a better way of putting it.
+        </p>
+      </div>
+
+      <img id="hxdg" src="materials/hexdiagram.png">
+      <img id="dbvw" src="materials/debugview.png">
+
+      <div class="turningcube">
+
+        <h1>The Directionality Problem</h1>
+
+        <p>
+          when building the grid, I built each rhombus point out from one of the obtuse angles using a common radius length. I used the polar cordinates of the points relative to its one anchor point to convert into cartesean cordinates for rendering
+        </p> 
+        <p>
+          As previously mentioned this caused me weeks of roadblock, but I did not remove this as a core principle of how my program works. I tore down all of the code to check for common centers forming a "cube" and wrote functions to append every valid center regardless of polarity to an array. Then using that array as its references it loops over the p5Draw function finding every center and aligning a random center to its three rhombi polarities.
+        </p> 
+        <p>
+          Only then does it perform any tranformations allowing for the generative behavior I had intended. 
+        </p>
+
+        <iframe src="TurningCubes/index.html"></iframe>
+
+        <i class="fa-solid fa-rotate-right" onclick="window.open('Programming.html', '_self')"></i>
+
+        <p>
+          The Debug display shows you the directionality of the blocks as well as how the state of the canvas changes in regards to the alignment of the rhombi.
+        </p>
+        <p>
+          It Displays all of the valid centers proving how volitile the lifespan of a given center is.
+        </p>
+
+        <br>
+
+        <p>As a proof of concept outside of my final project I had wanted to make an initial grid that was one big cube. I noticed when watching my program progress to higher order structures, that bigger and bigger cubes would form. So i decided to do just that and it is satisfying seeing it work in the other direction.</p>
+
+        <iframe src="bigcube/index.html"></iframe>
+
+        <i class="fa-solid fa-rotate-right" onclick="window.open('Programming.html', '_self')"></i>
+
+        <br>
+        <br>
+
+      </div>
+
+      <div id="BBLZ" class="turningcube">
+          <h1>
+            BOZOBLAST!
+          </h1>
+          <p>
+            Making use of the p5.js visual Library I decided to remake blockblast in javascript.
+          </p>
+          <p>nothing complex here!</p>
+           
+          <iframe src="BZBLAST/index.html" scrolling="no" style="overflow: hidden; border: none; background: none;"></iframe>
+          
+          <br>
+          <br>
+
+      </div>
+
 
   </main>
 
