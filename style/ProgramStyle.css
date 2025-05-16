@@ -11,7 +11,7 @@
 #projectIndex {
    margin-left: calc((100% - 77vw) / 2);
    margin-top: 5vh;
-   width: 36vw;
+   width: 60vw;
    background: transparent;
    border: 4px solid #bd3d3f;
    border-radius: 2.5vw;
@@ -185,7 +185,7 @@
    /* margin-top: 5vh; */
    margin-left: calc((100% - 77vw) / 2);
    aspect-ratio: 1 / 1;
-   width: 44vw;
+   width: 60vw;
    border: 4px solid #bd3d3f;
    border-radius: 2.5vw;
 }
@@ -195,7 +195,7 @@
    display: block;
    margin-left: calc(((100% - 77vw) / 2) + 24vw);
    aspect-ratio: 1.54 / 1;
-   width: 52vw;
+   width: 60vw;
    border: 4px solid #bd3d3f;
    border-radius: 2.5vw;
    margin-bottom: 5vh;
@@ -214,6 +214,12 @@
 
 #WBST a:hover {
    color: #924144;
+
+}
+
+#projectIndex i {
+
+   font-size: 1.5vw;
 
 }
 

@@ -10,9 +10,8 @@ function hideDropdown() {
 }
 
 function CubeProjJump(event) {
-   event.preventDefault(); // Prevent the default anchor behavior
+   event.preventDefault(); 
 
-   // Wait for the DOM to load (if not fully loaded)
    window.requestAnimationFrame(() => {
        const target = document.getElementById("project_");
        if (target) {
@@ -25,11 +24,39 @@ function CubeProjJump(event) {
 }
 
 function BlockProjJump(event) {
+    event.preventDefault(); 
+ 
+    window.requestAnimationFrame(() => {
+        const target = document.getElementById("BBLZ");
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            console.log("Scrolled to Project 1");
+        } else {
+            console.error("Element not found: #Project1");
+        }
+    });
+ }
+
+ function SiteProjJump(event,) {
+    event.preventDefault(); 
+
+    window.requestAnimationFrame(() => {
+        const target = document.getElementById("WBST");
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            console.log("Scrolled to Project 1");
+        } else {
+            console.error("Element not found: #Project1");
+        }
+    });
+ }
+
+ function RollOverTo(event, location) {
     event.preventDefault(); // Prevent the default anchor behavior
  
     // Wait for the DOM to load (if not fully loaded)
     window.requestAnimationFrame(() => {
-        const target = document.getElementById("BBLZ");
+        const target = document.getElementById(Location);
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
             console.log("Scrolled to Project 1");
