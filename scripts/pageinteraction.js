@@ -16,9 +16,9 @@ function CubeProjJump(event) {
        const target = document.getElementById("project_");
        if (target) {
            target.scrollIntoView({ behavior: "smooth", block: "start" });
-           console.log("Scrolled to Project 1");
+           console.log("Scrolled to Project ");
        } else {
-           console.error("Element not found: #Project1");
+           console.error("Element not found");
        }
    });
 }
@@ -30,9 +30,9 @@ function BlockProjJump(event) {
         const target = document.getElementById("BBLZ");
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
-            console.log("Scrolled to Project 1");
+            console.log("Scrolled to Project ");
         } else {
-            console.error("Element not found: #Project1");
+            console.error("Element not found");
         }
     });
  }
@@ -44,24 +44,23 @@ function BlockProjJump(event) {
         const target = document.getElementById("WBST");
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
-            console.log("Scrolled to Project 1");
+            console.log("Scrolled to Project ");
         } else {
-            console.error("Element not found: #Project1");
+            console.error("Element not found");
         }
     });
  }
 
  function RollOverTo(event, location) {
-    event.preventDefault(); // Prevent the default anchor behavior
+    event.preventDefault(); 
  
-    // Wait for the DOM to load (if not fully loaded)
     window.requestAnimationFrame(() => {
-        const target = document.getElementById(Location);
+        const target = document.getElementById(location);
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
-            console.log("Scrolled to Project 1");
+            console.log("Scrolled to Project ");
         } else {
-            console.error("Element not found: #Project1");
+            console.error("Element not found");
         }
     });
  }
