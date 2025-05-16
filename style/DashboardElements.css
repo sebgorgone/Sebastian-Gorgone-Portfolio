@@ -175,6 +175,32 @@ div.headerFiller{
    color: #924144;
  }
 
+ .footer {
+  margin: 0;
+  text-align-last: center;
+ }
+
+ footer h3 {
+  font-family: BankGothicBold;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 3.5vw;
+  color: #bd3d3f;
+  display: inline-block;
+  vertical-align: top;
+ }
+ .footsublink {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  padding-left: 3vw;
+  display: inline-block;
+ }
+ .footer a {
+  font-family: BankGothicRegular;
+  font-size: 1.9vw;
+  display: block;
+ }
+
 
 
 

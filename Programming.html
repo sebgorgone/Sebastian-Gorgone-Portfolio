@@ -93,10 +93,17 @@
         <a class="indexLink" href="#" onclick="CubeProjJump(event)">Turning Cubes</a>
         <p class="sublink">javascript</p>
         <p class="sublink">p5.js library</p>
-        <a class="indexLink" href="#" onclick="BlockProjJump(event)">'BozoBlast'</a>
+        <a class="indexLink" href="#" onclick="BlockProjJump(event)">BozoBlast</a>
         <p class="sublink">javascript</p>
         <p class="sublink">p5.js library</p>
         <p id="mbl" class="sublink" onclick="window.open('BZBLASTMOBILEBROWSER/index.html', '_self')">(mobile browsers)</p>
+        <a class="indexLink" href="#" onclick="SiteProjJump(event)">My portfolio</a>
+        <p class="sublink">javascript</p>
+        <p class="sublink">p5.js Library</p>
+        <p class="sublink">css</p>
+        <p class="sublink">html</p>
+
+
         <br>
         <br> 
       </div>
@@ -161,22 +168,25 @@
 
         <iframe src="TurningCubes/index.html"></iframe>
 
-        <i class="fa-solid fa-rotate-right" onclick="window.open('Programming.html', '_self')"></i>
+        <i class="fa-solid fa-rotate-right" onclick="refreshframes()"></i>
 
         <p>
           The Debug display shows you the directionality of the blocks as well as how the state of the canvas changes in regards to the alignment of the rhombi.
         </p>
+
         <p>
           It Displays all of the valid centers proving how volitile the lifespan of a given center is.
         </p>
 
         <br>
 
-        <p>As a proof of concept outside of my final project I had wanted to make an initial grid that was one big cube. I noticed when watching my program progress to higher order structures, that bigger and bigger cubes would form. So i decided to do just that and it is satisfying seeing it work in the other direction.</p>
+        <p ID="BCanchor">
+          As a proof of concept outside of my final project. I had wanted to make an initial grid that was one big cube. I noticed when watching my program progress to higher order structures, that bigger and bigger cubes would form. So I decided to do just that, and it is satisfying seeing it work in the other direction.
+        </p>
 
         <iframe src="bigcube/index.html"></iframe>
 
-        <i class="fa-solid fa-rotate-right" onclick="window.open('Programming.html', '_self')"></i>
+        <i class="fa-solid fa-rotate-right" onclick="refreshframes()"></i>
 
         <br>
         <br>
@@ -188,7 +198,7 @@
             BOZOBLAST!
           </h1>
           <p>
-            Making use of the p5.js visual Library I decided to remake blockblast in javascript.
+            Making use of the p5.js visual Library I remade blockblast in javascript.
           </p>
           <p>nothing complex here!</p>
            
@@ -199,10 +209,57 @@
 
       </div>
 
+      <div id="WBST" class="turningcube">
+        <h1>
+          My Portfolio
+        </h1>
+        <p>
+          This website was built completely by me. I wrote all of the static html and css for each page, and all of the javascript for the page elements.
+        </p>
+
+        <p>
+          I wanted to build my understanding of front-end web development. With no prior expirience, this seemed like a good choice for doing so.
+        </p>
+
+        <P>
+          The background for the Pages is a p5.js sketch that I had built for a final project. Information for that project is in the "Turning Cubes" section of the page.
+        </P>
+
+        <p>
+          The code for this site, as well as all of the projects I include inside of it are archived in my github portfolio repo 
+        </p>
+
+        <a href="https://github.com/sebgorgone" target="_none" id="githublink2" class="fa fa-github"><p class="label"></p></a>
+                 
+    </div>
+
 
   </main>
 
   <footer>
+    <div class="footer">
+          <h3 class="FootLink" onclick="window.location.href='Programming.html'">
+      programming
+      <a href="Programming.html#project_">turning cubes</a>
+      <a href="Programming.html#BBLZ">BozoBlast</a>
+      <a href="Programming.html#WBST">My Portfolio</a>
+    </h3>
+
+
+    <h3 class="FootLink" onclick="window.location.href='Edits.html'">
+      Edits
+    </h3>
+
+    <h3 class="FootLink" onclick="window.location.href='Design.html'">
+      Designs
+    </h3>
+
+    <h3>
+      Social
+    </h3>
+
+    </div>
+    
     <br />
     <br />
     <br />
