@@ -5,6 +5,7 @@
     <script src="scripts/p5.js"></script>
     <script src="scripts/FinalProjectApril21.js"></script>
     <script src="scripts/pageinteraction.js"></script>
+    <link rel="stylesheet" href="style/Design.css" />
     <title> Sebastian Gorgone Portfolio (Design)</title>
     <link rel="stylesheet" href="style/ContentElements.css" />
     <link rel="stylesheet" href="style/DashboardElements.css" />
@@ -85,7 +86,160 @@
     
     <div class="title-container">
       <h1>Design</h1>
+    </div>
+    
+    <div id="DesignIndex">
+      <h2>Design Projects</h2>
+
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'ILfinal')">DMD Illustrator Design Final</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Photoshop</p>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Illustrator</p>
+
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'cutawaydiv')">DMD Illustrator Brush Tool Project</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Illustrator</p>
+  
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'skidiv')">DMD Illustrator Pen Tool Project</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Illustrator</p>  
+      
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'psdiv')">Uconn Skydiving Photoshop Design</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Photoshop</p>
+      
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'aplANIM')">Design Lab Animation Project</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Animate</p>  
+
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'czANIM')">DMD final Project Animation</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Illustrator</p> 
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Animate</p> 
+      
+      <a class="indexLink" href="#" onclick="RollOverTo(event, 'czANIM')">Uconn Skydiving Logo Animation</a>
+      <p class="sublink"><i class="fa-solid fa-diamond"></i>Adobe Photoshop</p> 
+
+      
+        <br>
+        <br> 
+    </div>
+
+    <div class="content-container">
+      <main>
+
+        <strong>My Designs</strong>
+
+        <p>
+          Freshman Year at Uconn I started taking a handful Digital Media and Design foundation classes
+        </p>
+
+        <p>
+          These are some of my best projects and designs throughout those courses, as well as some designs I had done on my own
+        </p>
+
+
+      </main>
+    </div>
+
+    <div class="project-container" id="PSIL">
+      <h2>
+        Adobe Illustrator and Adobe Photoshop
+      </h2>
+      <!-- Illustrator final -->
+      <div class="content-group" id="ILfinal">
+        <h3>DMD Foundations Final Project</h3>
+        <div class="DesignImageGroup">
+          <img id="SDil" src="materials/NUMBER3.png" />
+        </div>
+        <p>
+          This is one of my final Designs for my digital media and design foundations final project. I did all of the pieces in both Illustrator and Photoshop- Including this design.
+        </p>
       </div>
+      <!-- cutaway -->
+      <div class="content-group" id="cutawaydiv">
+        <h3>DMD Foundations Brush Tool Project</h3>
+        <div class="DesignImageGroup">
+          <img id="Caway" src="materials/CutawayBrushTool.jpg" />
+        </div>
+        <p>
+          This is my final design for a Digital Media And Design foundations course final project. This was done in illustrator using the brush and pen tools.
+        </p>
+      </div>
+      <!-- ski -->
+      <div class="content-group" id="skidiv">
+        <h3>DMD Foundations PenTool Project</h3>
+        <div class="DesignImageGroup">
+          <img id="Designski" src="materials/DMDproject1.jpg" />
+        </div>
+        <p>
+          This is my final design for a Digital Media And Design foundations course project. This was done in illustrator using the brush and pen tools.
+        </p>
+      </div> 
+      <!-- photoshop -->
+      <div class="content-group" id="psdiv">
+        <h3>Uconn Skydiving Tandem Weekend Poster Advertisements</h3>
+        <div class="DesignImageGroup">
+          <img class="TW" src="materials/Tandemweekendposter1.png" />
+          <img class="TW" src="materials/Tandemweekendposter6.png" />
+          <img class="TW" src="materials/Tandemweekendposter3.png" />
+
+        </div>
+        <p>
+          These are some of the designs that I made for the Uconn Skydiving Teams Instagram, as well as for posters that were hung up around campus.
+        </p>
+      </div>  
+
+    </div>
+
+    <div class="project-container" id="ANIM">
+      <h2>
+        Animation Projects
+      </h2>
+      <!-- Animation Project Apple -->
+      <div class="content-group" id="aplANIM">
+        <h3>Digital Media and Design design lab animation project</h3>
+        <div class="DesignImageGroup">
+          <video style="aspect-ratio: 3 / 2;" id="apple" controls loop>
+            <source src="materials/AnimationProject.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>
+          This project was my first ever animation. Working with another classmate, we made this 10 second, 24fps, frame by frame animation. We worked only with the onion layers on Adobe Animate to draw each frame. I was tasked with the second half of the animation where the worm goes into the apple, and then gets blown up.
+        </p>
+      </div>
+      <!-- crazy lady animation -->
+      <div class="content-group" id="czANIM">
+        <h3>Digital Media and Design foundation animation for final project</h3>
+        <div class="DesignImageGroup">
+          <video style="aspect-ratio: 16 / 9;" id="sdANIM" controls loop>
+            <source src="materials/DMDFINALANIMATION.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>
+          For my Digital Media and Design Foundations final project it had been a requirement to make an animation as part of a design portfolio. I decided to do a frame by frame animation of a skydiving crash video. I exported each frame individually out of seperate illustrator files over the course of 2 weeks. The result is this 10 second, 12 frame per second animation. In hindsight I had been in way over my head trying to do an animation like this using illustrator, and the concequences had been a lack quality control for sure.
+        </p>
+      </div>
+      <!-- Uconn Skydiving Animation -->
+      <div class="content-group" id="ucANIM">
+        <h3>Uconn Skydiving Logo Animation</h3>
+        <div class="DesignImageGroup">
+          <video style="aspect-ratio: 5.48 / 1;" id="ucsdANIM" controls loop>
+            <source src="materials/ucsdfinal.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>
+          I animated the Uconn Skydiving logo (Which I did not design) for the 
+          <a href="Edits.html#UCSDinv24" target="_self">Uconn Skydiving Invovlment Reel</a>
+          that I made for their instagram page
+          <br>
+          <br>
+          This was done in photoshop with key frames
+        </p>
+
+      </div>
+
+     
+
+    </div>
+
 
   </main>
 
@@ -113,6 +267,8 @@
 
     <h3 class="FootLink" onclick="window.location.href='Design.html'">
       Designs
+      <a href="Design.html#PSIL">Adobe PS/IL</a> 
+      <a href="Design.html#ANIM">Animation</a> 
     </h3>
 
     <h3>
