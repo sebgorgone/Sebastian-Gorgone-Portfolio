@@ -102,9 +102,10 @@
 
 .turningcube a {
    font-family: BankGothicRegular;
+   color: #bd3d3f;
    font-size: 3.5vw;
    display: block;
-   margin: 2vw;
+   margin: 4vw;
    text-align: center;
 }
 
@@ -213,6 +214,11 @@
 }
 
 #WBST a:hover {
+   color: #924144;
+
+}
+
+#TODO a:hover {
    color: #924144;
 
 }
